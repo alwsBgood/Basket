@@ -1,4 +1,3 @@
-//Форма отправки 2.0
 $(function() {
   $("[name=send]").click(function () {
     $(":input.error").removeClass('error');
@@ -45,52 +44,7 @@ $(function() {
       $(send_btn).each(function() {
         $(this).attr('disabled', true);
       });
-      $(send_options).each(function() {
-        var form = $(this).closest('form'), name = form.find('.name').val();
-        if ($(this).val() == '') {
-          $.ajax({
-            type: 'POST',
-            url: 'mail.php',
-            data: msg,
-            success: function() {
-              $('form').trigger("reset");
-              setTimeout(function(){  $("[name=send]").removeAttr("disabled"); }, 1000);
-                    // Настройки модального окна после удачной отправки
-                        $('div.md-show').removeClass('md-show');
-                        $('form').trigger("reset");
-                        $("#call_ok")[0].click();
-                  },
-                  error: function(xhr, str) {
-                    alert('Возникла ошибка: ' + xhr.responseCode);
-                  }
-                });
-          } else {
-          $.ajax({
-            type: 'POST',
-            url: 'mail.php',
-            data: msg,
-            success:
-            $.ajax({
-              type: 'POST',
-              url: 'https://app.getresponse.com/add_subscriber.html',
-              data: msg,
-              statusCode: {0:function() {
-                $( "#modal_callback_ok h4" ).remove();
-                $( "#modal_callback_ok" ).prepend("<h4>"+name+",</h4>");
-                $('form').trigger("reset");
-                setTimeout(function(){  $("[name=send]").removeAttr("disabled"); }, 1000);
-                // Настройки модального окна после удачной отправки
-                $('div.md-show').removeClass('md-show');
-                $('form').trigger("reset");
-                $("#call_ok")[0].click();
-              }}
-            }),
-            error:  function(xhr, str) {
-              alert('Возникла ошибка: ' + xhr.responseCode);
-            }
-          });
-        }
-      });
+      $(send_options).each(function() {});
     }
     return false;
   })
@@ -99,96 +53,47 @@ $(function() {
 
 
 
-
- // Smooth scroll to anchor
-
- $('.scroll').click(function(){
-  $('html, body').animate({
-    scrollTop: $( $.attr(this, 'href') ).offset().top
-  }, 1000);
-  return false;
-});
-
-//  INPUT TEL MASK
-
-jQuery(function($){
- $("input[type='tel']").mask("+9 (999) 999-9999");
-});
-
-
-
-// Scroll BAR
-
-$(window).scroll(function() {
-    // calculate the percentage the user has scrolled down the page
-    var scrollPercent = 100 * $(window).scrollTop() / ($(document).height() - $(window).height());
-
-    $('.bar-long').css('width', scrollPercent +"%"  );
-
-  });
-
-
-//YOUTUBE
-
-$(function() {
-  $(".youtube").each(function() {
-    $(this).css('background-image', 'url(http://i.ytimg.com/vi/' + this.id + '/sddefault.jpg)');
-
-    $(this).append($('<div/>', {'class': 'play'}));
-
-    $(document).delegate('#'+this.id, 'click', function() {
-      var iframe_url = "https://www.youtube.com/embed/" + this.id + "?autoplay=1&autohide=1";
-      if ($(this).data('params')) iframe_url+='&'+$(this).data('params');
-
-      var iframe = $('<iframe/>', {'frameborder': '0', 'src': iframe_url, 'width': $(this).width(), 'height': $(this).height() })
-
-      $(this).replaceWith(iframe);
-    });
-  });
-});
-
-
 // Perfect Pxel
 
-$('body').each(function() {
-    var body = $(this);
-    var img_url = $(this).data('img');
-    var img = new Image();
-    img.src = img_url;
-    img.onload = function(){
-        var ppbox = '<div id="pp" style="background: url('+img_url+') no-repeat 50% 0%;top:0;width:100%;position:absolute;z-index:1000000;opacity:0.5;height:'+img.height+'px"></div>';
-        var ppbtn = '<button onclick="myOff()" id="ppbtn" style="position:fixed;top:0;right:0;z-index:1000001">ON</button>'
-        body.append(ppbox);
-        body.append(ppbtn);
-    };
-});
-function myOff() {
-    var ppbtntext = $('#ppbtn').text();
-    if (ppbtntext == 'ON') {
-        $('#ppbtn').text('OFF');
-        $('#pp').css('display', 'none');
-    } else {
-        $('#ppbtn').text('ON');
-        $('#pp')        .css({
-          ' z-index' : '1000000',
-          display: 'block'
-        });
+// $('body').each(function() {
+//     var body = $(this);
+//     var img_url = $(this).data('img');
+//     var img = new Image();
+//     img.src = img_url;
+//     img.onload = function(){
+//         var ppbox = '<div id="pp" style="background: url('+img_url+') no-repeat 50% 0%;top:0;width:100%;position:absolute;z-index:1000000;opacity:0.5;height:'+img.height+'px"></div>';
+//         var ppbtn = '<button onclick="myOff()" id="ppbtn" style="position:fixed;top:0;right:0;z-index:1000001">ON</button>'
+//         body.append(ppbox);
+//         body.append(ppbtn);
+//     };
+// });
+// function myOff() {
+//     var ppbtntext = $('#ppbtn').text();
+//     if (ppbtntext == 'ON') {
+//         $('#ppbtn').text('OFF');
+//         $('#pp').css('display', 'none');
+//     } else {
+//         $('#ppbtn').text('ON');
+//         $('#pp')        .css({
+//           ' z-index' : '1000000',
+//           display: 'block'
+//         });
 
-    }
-}
+//     }
+// }
 
-$('html').keydown(function(){
-  var ppbtntext = $('#ppbtn').text();
-  if (event.keyCode == 81) {
-    if (ppbtntext == 'ON') {
-        $('#ppbtn').text('OFF');
-        $('#pp').css('display', 'none');
-    } else {
-        $('#ppbtn').text('ON');
-        $('#pp')        .css({
-          ' z-index' : '1000000',
-          display: 'block'
-        });
-    }
-  }
-});
+// $('html').keydown(function(){
+//   var ppbtntext = $('#ppbtn').text();
+//   if (event.keyCode == 81) {
+//     if (ppbtntext == 'ON') {
+//         $('#ppbtn').text('OFF');
+//         $('#pp').css('display', 'none');
+//     } else {
+//         $('#ppbtn').text('ON');
+//         $('#pp')        .css({
+//           ' z-index' : '1000000',
+//           display: 'block'
+//         });
+//     }
+//   }
+// });
