@@ -1,0 +1,15 @@
+@import "bourbon";
+
+@include font-face("Uni-Sans-Bold", "fonts/Uni-Sans-Bold", $file-formats: woff woff2);
+
+@include font-face("UniSansSemiBold", "fonts/UniSansSemiBold", $file-formats: woff woff2);
+
+@include font-face("Roboto", "fonts/Roboto", $file-formats: woff woff2);
+
+@include font-face("Roboto_bold", "fonts/Robotobold", $file-formats: woff woff2);
+
+@include font-face("BebasNeueBold", "fonts/BebasNeueBold", $file-formats: woff woff2);
+
+@include font-face("MyriadPro-Regular", "fonts/MyriadPro-Regular", $file-formats: woff woff2);
+
+@include font-face("MyriadPro-Bold", "fonts/MyriadPro-Bold", $file-formats: woff woff2);

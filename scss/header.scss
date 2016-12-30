@@ -1,0 +1,144 @@
+@import "bourbon";
+@import "vars.scss";
+
+body{
+	position: relative;
+	overflow-x: hidden;
+	min-width: 320px;
+	font: 18px/24px  $main_font;
+  color: #373f41;;
+	background-color: #fff;
+}
+
+a,button,input,textarea{
+	text-decoration: none;
+	outline: 0;
+	border: 0;
+	@include transition(color 0.4s ease, background-color 0.4s ease, background-image 0.4s ease, border-color 0.4s ease);
+	&:focus{
+		outline: 0;
+	}
+}
+
+input,textarea{
+	box-sizing: border-box;
+}
+
+textarea{
+	resize:none;
+}
+
+button{
+	&:hover{
+		cursor: pointer;
+	}
+}
+
+.hidden{
+	width: 0;
+	height: 0;
+}
+
+.btn{
+	width: 266px;
+	height: 63px;
+	padding-top: 7px;
+	background-color: #ffec3d;
+	border-radius: 3px;
+	box-shadow: 0 3px 0 #c5b731;
+
+	color: #434343;
+	font: 20px $Myriad_bold;
+	text-transform: uppercase;
+}
+
+#sec_01{
+	padding: 15px 0  30px;
+	background: url(../img/sec_01-bg.png) top center no-repeat;
+	color: #fff;
+	.top{
+		text-align: center;
+		.logo{
+			float: left;
+		}
+		.date{
+			float: right;
+			text-align: left;
+			color: #ecc52b;
+			font-family: $Roboto;
+			font-size: 18px;
+			line-height: 24px;
+			text-transform: uppercase;
+			margin-top: 43px;
+		}
+		.title{
+			padding: 0 10px 15px;
+			margin-top: 50px;
+			background: url(../img/sec_01-underline.png) bottom center no-repeat;
+			display: inline-block;
+			font-family: $Roboto_bold;
+		}
+	}
+	h1{
+		position: relative;
+		font: 60px/60px $Uni_bold;
+		text-transform: uppercase;
+		display: inline-block;
+		margin-top: 20px;
+	}
+	h1:before{
+		content: "";
+		position: absolute;
+		width: 40px;
+		height: 50px;
+		top: -30px;
+		right: 10px;
+		background: url(../img/hat.png) center no-repeat;
+	}
+	.content{margin-top: 35px;}
+	.content-video{
+		display: inline-block;
+		vertical-align: top;
+		margin-right: 80px;
+		.youtube{
+			width: 400px;
+			height: 235px;
+			background-size: 100% 100%;
+		}
+	}
+	.content-text{
+		display: inline-block;
+		vertical-align: top;
+		.afterheader{
+			font: 24px $Myriad_bold;
+			background: url(../img/sec_01-mark.png) top left no-repeat;
+			margin-bottom: 30px;
+		}
+		.counter--counter{
+			background: url(../img/counter.png) top left;
+			display: inline-block;
+			margin-top: 15px;
+		}
+		#counter-number{
+			color: #212121;
+			font-family: $Bebas;
+			font-size: 55px;
+
+			letter-spacing: 23px;
+			padding-left: 12px;
+			display: block;
+			height: 74px;
+			line-height: 82px;
+			margin-right: -12px;
+		}
+	}
+	.btn{
+		margin: 55px auto 30px;
+	}
+	.text--small{
+		text-align: center;
+		color: #a2a2a2;
+		font-size: 15px;
+		margin-bottom: 30px;
+	}
+}
