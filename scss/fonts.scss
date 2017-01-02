@@ -1,5 +1,5 @@
 @import "bourbon";
 
-@include font-face("ArialRegular", "fonts/ArialRegular", $file-formats: woff woff2);
-@include font-face("ArialBold", "fonts/ArialBold", $file-formats: woff woff2);
-@include font-face("glyphicons-halflings-regular", "fonts/glyphicons-halflings-regular", $file-formats: woff woff2);
+@include font-face("ArialRegular", "../fonts/ArialRegular", $file-formats: woff woff2);
+@include font-face("ArialBold", "../fonts/ArialBold", $file-formats: woff woff2);
+@include font-face("glyphicons-halflings-regular", "../fonts/glyphicons-halflings-regular", $file-formats: woff woff2);

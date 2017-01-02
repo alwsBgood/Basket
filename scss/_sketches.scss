@@ -34,12 +34,15 @@
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
     min-width: 140px;
+    min-height: 40px;
     text-align: center;
 }
 .allert:hover span, .allert_tell:hover span {
     border : 1px solid #FF6565;
     background : #fff;
-    display : inline;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position : absolute;
     color : #4e4e4e;
     right:24px;
@@ -48,31 +51,23 @@
 }
 
 input::-webkit-input-placeholder{
-  color: black;
-  letter-spacing: 0.16em;
-  color: $main_color;
-  font: 18px $main_font;
+  color: #888;
+  font: 16px/40px $main_font;
 }
 
 input:-moz-placeholder{
-  color: black;
-  letter-spacing: 0.16em;
-  color: $main_color;
-  font: 18px $main_font;
+  color: #888;
+  font: 16px/40px $main_font;
 }
 
 input::-moz-placeholder{
-  color: black;
-  letter-spacing: 0.16em;
-  color: $main_color;
-  font: 18px $main_font;
+  color: #888;
+  font: 16px/40px $main_font;
 }
 
 input:-ms-input-placeholder{
-  color: black;
-  letter-spacing: 0.16em;
-  color: $main_color;
-  font: 18px $main_font;
+  color: #888;
+  font: 16px/40px $main_font;
 }
 
 @font-face {
@@ -81,6 +76,7 @@ input:-ms-input-placeholder{
   src: url('../fonts/glyphicons-halflings-regular.eot');
   src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'),
 }
+
 .glyphicon {
   position: relative;
   top: 1px;

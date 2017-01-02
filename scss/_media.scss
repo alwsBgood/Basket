@@ -1,12 +1,422 @@
 @import "bourbon";
 @import "vars.scss";
 
-// 599
-@include for-size(phone-only) {}
-@media screen and (max-width: 600px){}
-// 600 -899
-@include for-size(tablet-portait-only) {}
-@media screen and (max-width: 900px){}
-// 900 - 1199
-@include for-size(tablet-landscape-only) {}
-@media screen and (max-width: 1200px){}
+@media (max-width:490px) {
+  .container{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  // header
+  .header_logo{
+    float: none;
+     img{
+      width: 100%;
+      max-width: 200px;
+    }
+  }
+  .header_tel{
+    margin-right: 0;
+    margin-top: 20px;
+    float: none;
+  }
+  .header_tel_phone{
+    font-size: 18px;
+  }
+  // product cards (page 1)
+  .product_card_header_sec {
+    .product_card_header{
+      font-size: 16px;
+      width: 80%;
+    }
+    .delete_card span{
+      display: none;
+    }
+  }
+  .product_card_content {
+    padding: 20px;
+    text-align: center;
+  }
+  .card_content_info{
+    display: none;
+  }
+  .mobile{display: block !important;}
+  .card_content_price{
+    display: none;
+    float: none;
+    padding-right: 10px;
+    .price_description{
+      float: left;
+    }
+  }
+  .card_content_partnerShop{
+    text-align: center;
+  }
+  //total price (page 1)
+  .total_price_container{
+    width: 100%;
+    .button{
+      float: none;
+      margin-right: auto;
+      margin-left: auto;
+      display: block;
+    }
+    .total_price_remark{
+      text-align: center;
+    }
+    .total_price_description {
+      float: left;
+    }
+    .total_price{
+      min-width: auto;
+    }
+    .prev_page_link{
+      position: static;
+    }
+  }
+  .total_price_sec{
+    padding-bottom: 60px;
+    .prev_page_link{
+      bottom: -50px;
+    }
+  }
+  // Authorization
+  .authorization_steps{
+    font: 16px/30px $bold;
+    li+li{margin-left: 20px;}
+    li+li:before{
+      left: -20px;
+      width: 10px;
+      height: 10px;
+      margin-top: -5px;
+    }
+    .step_number{
+      width: 30px;
+      height: 30px;
+    }
+    .inactive_step{
+      .step_number{
+        line-height: 28px;
+      }
+    }
+  }
+  .authorization_info_block{
+    display: none;
+  }
+  .form_block{
+    .label_form_checkbox{
+      width: 100%;
+      .styled_chekbox{
+        float: left;
+        margin-bottom: 10px;
+      }
+      span+span{
+        display: inline-block;
+        margin-top: -5px;
+        width: 90%;
+      }
+    }
+    .field.short_field{
+      max-width: 100%;
+      width: 100%;
+    }
+    .short_field + .short_field{
+      margin-left: 0;
+      margin-top: 20px;
+    }
+    .post_fields{
+      .index_field{
+        max-width: 470px;
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+      .location_field{
+        max-width: 470px;
+        width: 100%;
+      }
+    }
+    .hidden_form_inputs select + select {
+        margin-left: 5px;
+        padding: 0 5px;
+    }
+  }
+  // Sop Info Card
+  .shop_info_card{
+    margin: 30px auto;
+    max-width: 100%;
+    padding: 20px;
+  }
+  .pruduct_info_product_card{
+    .product_description{
+      max-width: 145px;
+    }
+  }
+  // User info and payment way
+  .card_adress{
+    max-width: 100%;
+    min-height: auto;
+  }
+  .payment_info{
+    margin-top: 20px;
+    max-width: 100%;
+  }
+  // footer
+  .footer{padding-bottom: 20px;}
+  .footer_block{
+    max-width: auto;
+    display: block;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+  }
+}
+
+@media (min-width: 491px) and  (max-width:768px) {
+  .container{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  //header
+  .header_logo img{
+    width: 100%;
+    max-width: 200px;
+  }
+  .header_tel{margin-right: 0;}
+  .header_tel_phone span{display: none;}
+  // product card (page 1)
+  .product_card_header_sec {
+    .product_card_header{
+      font-size: 16px;
+      width: 70%;
+    }
+  }
+  .card_content_info{
+    display: none;
+  }
+  .mobile{display: block !important;}
+  .card_content_price{display: none;}
+  .card_content_partnerShop{
+    text-align: center;
+  }
+  // total price (page 1)
+  .total_price_container{
+    padding-right: 10px;
+    .button{
+      float: right;
+    }
+    .pay_type{
+      float: right;
+    }
+  }
+  // Authorization
+  .authorization_info{
+    font-size: 11px;
+    margin-right: 10px;
+    li{
+      padding-left: 18px;
+    }
+    li:before{
+      width: 14px;
+      background-size: contain;
+    }
+    li+li{margin-left: 8px;}
+  }
+  .form_block{
+    .label_form_checkbox{
+      width: 100%;
+      .styled_chekbox{
+        float: left;
+        margin-bottom: 10px;
+      }
+      span+span{
+        display: inline-block;
+        margin-top: -5px;
+        width: 90%;
+      }
+    }
+    .field.short_field{
+      max-width: 470px;
+      width: 100%;
+    }
+    .short_field + .short_field{
+      margin-left: 0;
+      margin-top: 20px;
+    }
+    .post_fields{
+      .index_field{
+        max-width: 470px;
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+      .location_field{
+        max-width: 470px;
+        width: 100%;
+      }
+    }
+  }
+  // Sop Info Card
+  .shop_info_card{
+    margin: 30px auto;
+    max-width: 100%;
+    padding-left: 40px;
+  }
+  // User info and payment way
+  .card_adress{
+    max-width: 45%;
+  }
+  .payment_info{
+    max-width: 45%;
+  }
+  // footer
+  .footer_block{
+    max-width: 230px;
+    vertical-align: top;
+    border-right: 1px solid #eee;
+  }
+  .footer_shop_info {padding-left: 20px;}
+}
+
+@media (min-width: 769px) and  (max-width:992px) {
+  //header
+  .header_tel{margin-right: 0;}
+  //product card (page 1)
+  .product_card_content{text-align: center;}
+  .card_content_info{
+    margin-right: 40px;
+    .card_type{font-size: 14px;}
+  }
+  .card_content_partnerShop{
+    .pratnerShop_logo{margin-right: 5px;}
+    .card_pratnerShop_sec > ul li+li{margin-left: 5px;}
+  }
+  .card_content_price{
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #eee;
+    margin-top: 20px;
+    float: none;
+    .price_type{
+      display: inline-block;
+      margin: 0 !important;
+    }
+    .price_type+.price_type{margin-left: 5px !important;}
+    .price_delivery {
+      padding-right: 30px;
+    }
+    .price{
+      min-width: auto;
+      margin-left: 5px;
+    }
+    .delivery_more_info{
+      right: 5px;
+      top: -2px;
+    }
+  }
+  // Authorization
+  .authorization_steps{
+    li+li{margin-left: 60px;}
+  }
+  .authorization_info{
+    font-size: 11px;
+    margin-right: 0px;
+    li{
+      padding-left: 18px;
+    }
+    li:before{
+      width: 14px;
+      background-size: contain;
+    }
+    li+li{margin-left: 8px;}
+  }
+  .form_block{
+    .label_form_checkbox{
+      width: 100%;
+      .styled_chekbox{
+        float: left;
+        margin-bottom: 10px;
+      }
+      span+span{
+        display: inline-block;
+        margin-top: -5px;
+        width: 90%;
+      }
+    }
+    .field.short_field{
+      max-width: 470px;
+      width: 100%;
+    }
+    .short_field + .short_field{
+      margin-left: 0;
+      margin-top: 20px;
+    }
+    .post_fields{
+      .index_field{
+        max-width: 130px;
+        width: 100%;
+        margin-right: 27px;
+      }
+      .location_field{
+        max-width: 255px;
+        width: 100%;
+      }
+    }
+  }
+  // Sop Info Card
+  .pruduct_info_product_card{
+    .product_description{
+      max-width: 125px;
+    }
+  }
+  // User info and payment way
+  .card_adress{
+    max-width: 100%;
+    min-height: auto;
+  }
+  .payment_info{
+    margin-top: 20px;
+    max-width: 100%;
+  }
+  // footer
+  .footer_block{
+    max-width: 240px;
+    padding: 0 20px 0 0;
+  }
+}
+
+@media (min-width: 993px) and (max-width:1200px) {
+  //product card
+  .card_content_info{
+    margin-right: 40px;
+    .card_type{font-size: 14px;}
+  }
+  .card_content_partnerShop{
+    .pratnerShop_logo{margin-right: 5px;}
+    .card_pratnerShop_sec > ul li+li{margin-left: 5px;}
+  }
+  .card_content_price{
+    width: 100%;
+    max-width: 200px;
+    .price_description{
+      max-width: 100px;
+    }
+  }
+  // Authorization
+  .authorization_info{
+    font-size: 11px;
+    margin-right: 25px;
+    li+li{margin-left: 10px;}
+  }
+  // User info and payment way
+  .card_adress{
+    max-width: 290px;
+  }
+  .payment_info{
+    max-width: 260px;
+  }
+  //footer
+  .footer_block{
+    max-width: 280px;
+    padding: 0 20px 0 0;
+  }
+}
