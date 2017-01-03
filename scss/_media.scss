@@ -440,3 +440,21 @@
     padding: 0 20px 0 0;
   }
 }
+
+@media (min-width: 1358px)  {
+  .card_adress{
+    min-width: 420px;
+  }
+}
+
+@media (min-width: 1900px){
+  .delivery_more_info  .more_info_description{
+    right: -270px;
+    left: initial;
+  }
+  .more_info_description:before{
+    left: -15px;
+    border-right: 15px solid #eee;
+    border-left: none;
+  }
+}
