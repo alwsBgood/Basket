@@ -160,6 +160,16 @@
     margin-top: 20px;
     max-width: 100%;
   }
+    // Chosen products block (page 4)
+  .bought_product_block{
+    .product_block_header{
+      text-align: center;
+    }
+    .bought_product_img{
+      display: block;
+      text-align: center;
+    }
+  }
   // footer
   .footer{padding-bottom: 20px;}
   .footer_block{
@@ -376,6 +386,12 @@
   .payment_info{
     margin-top: 20px;
     max-width: 100%;
+  }
+  // Chosen products block (page 4)
+  .testimonials_card{
+    .button img{
+      display: none;
+    }
   }
   // footer
   .footer_block{

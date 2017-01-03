@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="ru">
+<html class="no-js" lang="de">
 
 <head>
 
@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="css/main.css">
 
 </head>
-<body data-img="img/land-3.jpg">
+<body>
 
 <!--  Header  -->
 <header id="header" class="header_sec">
@@ -71,19 +71,18 @@
                     </ul>
                 </div>
 
-
                 <!-- Chosen products block -->
                 <div class="products_sec_bought row ">
                     <div class="chosen_products_block">
-                        <p class="chosen_products_block_header"></p>
+                        <p class="chosen_products_block_header">Ihre Bestellung</p>
                         <p class="order_number">Moebel24 Auftragsnummer <span class="order_id">BQXD29917</span></p>
 
+                        <!--  Bought goods block -->
                         <div class="bought_product_block">
                             <p class="product_block_header">Boxspringbett, weiß mit Federkernmatratze</p>
                             <div class="bought_product_img">
                                 <img src="img/product-big-1.png" alt="">
                             </div>
-                            <!--  Bought goods block -->
                             <div class="product_info">
                                 <div class="product_info_row">
                                     <p class="product_info_name">Artikelnummer:</p>
@@ -94,15 +93,56 @@
                                     <p class="product_info_value product_ammount">1</p>
                                 </div>
                                 <div class="product_info_row">
-                                    <p class="product_info_name"></p>
+                                    <p class="product_info_name">Gesamtpreis:<br /> (inkl. Mehrwersteuer und Versandkosten)</p>
                                     <p class="product_info_value summary_price"><span class="price">899,99</span> €</p>
                                 </div>
                             </div>
-                            <!--  Bought goods END-->
                         </div>
+                        <!--  Bought goods END-->
+
+                        <!--  Bought goods block -->
+                        <div class="bought_product_block">
+                            <p class="product_block_header">Glastisch, rund</p>
+                            <div class="bought_product_img">
+                                <img src="img/product-big-2.png" alt="">
+                            </div>
+                            <div class="product_info">
+                                <div class="product_info_row">
+                                    <p class="product_info_name">Artikelnummer:</p>
+                                    <p class="product_info_value product_id">129383758</p>
+                                </div>
+                                <div class="product_info_row">
+                                    <p class="product_info_name">Menge:</p>
+                                    <p class="product_info_value product_ammount">1</p>
+                                </div>
+                                <div class="product_info_row">
+                                    <p class="product_info_name">Gesamtpreis:<br /> (inkl. Mehrwersteuer und Versandkosten)</p>
+                                    <p class="product_info_value summary_price"><span class="price">195,99</span> €</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  Bought goods END-->
+
                     </div>
                 </div>
                 <!-- Chosen products END -->
+
+                <!-- What next list -->
+                <div class="next_steps_sec">
+                <p class="next_steps_header">Wie geht es weiter?</p>
+                    <ul class="next_steps">
+                       <li>Sie erhalten eine Bestellbestätigung vom Verrtagspartner an Ihre E-Mail Adresse</li>
+                       <li>Alle weiteren Informationen erhalten Sie per E-Mail von Ihrem Shop-Vertragspartner.</li>
+                       <li>Schon bald darauf erhalten Sie Ihre Lieferung, Moebel24 wünscht Ihnen viel Spass mit Ihrem neuen Produkt.</li>
+                    </ul>
+                    <a href="#" class="button flex">WEITER EINKAUFEN <img src="img/btn-next.png" alt=""></a>
+                    <div class="data_safety_hint">
+                        <i class="glyphicon glyphicon-info-sign"></i>
+                        <p class="data_safery_title">Hinweis</p>
+                        <p class="data_safety_text"> Moebel24 überträgt Ihre Angaben an den Vertragspartner zwecks Auftragsbearbeitung. Sie erhalten vom Vertragspartner eine Bestellbestätigung per E-Mail wenn die Bestellung angenommen wurde.</p>
+                    </div>
+                </div>
+                <!--  What next END -->
             </div>
             <!--  Content page 4 END -->
 
@@ -115,145 +155,56 @@
                     <!-- Shop INFO -->
                         <div class="shop_info_container">
                             <p class="shop_info_header info_card_header">Ihre Bestellung bei <span class="shop_site_name">home24.de</span></p>
-                            <p class="shop_info_underheader">(Vertragspartner)</p>
-                            <div class="shop_info_block">
-                                <a href="#" class="shop_info_logo"><img src="img/shop-1.png" alt=""></a>
-                                <ul class="shop_info_politics">
-                                    <li><a href="#">AGB</a></li>
-                                    <li><a href="#">Datenschutzerklärung</a></li>
-                                    <li><a href="#">Widerrufserklärung</a></li>
-                                    <li><a href="#">Versandkosten</a></li>
-                                </ul>
-                                <div class="shop_info_links">
-                                    <a target="_blank" class="shop_link_info_more out_link" href="#">Shop Info</a>
-                                    <a target="_blank" class="shop_link_impressum_more out_link" href="#">Shop Impressum</a>
+                            <div class="shop_info_block clearfix">
+                                <div class="left_block">
+                                    <a href="#" class="shop_info_logo"><img src="img/shop-1.png" alt=""></a>
+                                    <!-- Edit data-stars attr from 1 to 5 -->
+                                    <div data-stars="4" class="stars"></div>
+                                    <p class="reviews_count">(<span class="reviews">482</span> Meinungen)</p>
                                 </div>
-                            </div>
-                        </div>
-                    <!-- Shop INFO  END-->
-
-                        <div class="data_safety_info">
-                            <p class="data_safery_title">Hinweis</p>
-                            <p class="data_safety_text">Moebel24 überträgt Ihre Angaben an den Vertragspartner zwecks Auftragsbearbeitung und nimmt hierfür eine Zwischenspeicherung vor. Anschliessend werden alle Anschrifts- und Bestelldaten gelöscht.</p>
-                        </div>
-
-                        <!-- Choosen products -->
-                        <div class="product_info_container">
-                        <p class="product_info_header info_card_header">Ihre Artikel bei <span class="shop_site_name">home24.de</span></p>
-                            <!--  Choosen product card -->
-                                <div class="pruduct_info_product_card">
-                                    <div class="product_img sale card_content_img">
-                                        <img src="img/product-1.png" alt="">
-                                    </div>
-                                    <div class="product_description">
-                                        <a href="#" class="product_title">Boxspringbett, weiß mit Federkernmatratze</a>
-                                        <p class="product_price"><span class="price">899,99</span> €</p>
-                                    </div>
-                                </div>
-                            <!--  Choosen product card  END-->
-
-                            <!--  Choosen product card -->
-                                <div class="pruduct_info_product_card">
-                                    <div class="product_img card_content_img">
-                                        <img src="img/product-2.png" alt="">
-                                    </div>
-                                    <div class="product_description">
-                                        <a href="#" class="product_title">Esstisch Glas, rund</a>
-                                        <p class="product_price"><span class="price">195.95</span> €</p>
-                                    </div>
-                                </div>
-                            <!--  Choosen product card END-->
-
-                        </div>
-                        <!-- Choosen products END -->
-                    </div>
-                    <!-- Shop Card END -->
-
-                    <!-- Shop Card -->
-                    <div class="shop_info_card">
-                        <!-- Shop INFO -->
-                            <div class="shop_info_container">
-                                <p class="shop_info_header info_card_header">Ihre Bestellung bei <span class="shop_site_name">porta.de</span></p>
-                                <p class="shop_info_underheader">(Vertragspartner)</p>
-                                <div class="shop_info_block">
-                                    <a href="#" class="shop_info_logo"><img src="img/shop-2.png" alt=""></a>
+                                <div class="right_block">
+                                    <p class="user_adress">
+                                        <span class="user_street">Musterstrasse</span>
+                                        <span class="user_house_number">12</span><br />
+                                        <span class="user_post_index">10115</span>
+                                        <span class="user_city">Berlin</span> <br />
+                                        <span class="user_country">Deutschland</span>
+                                    </p>
                                     <ul class="shop_info_politics">
                                         <li><a href="#">AGB</a></li>
                                         <li><a href="#">Datenschutzerklärung</a></li>
                                         <li><a href="#">Widerrufserklärung</a></li>
                                         <li><a href="#">Versandkosten</a></li>
                                     </ul>
-                                    <div class="shop_info_links">
-                                        <a target="_blank" class="shop_link_info_more out_link" href="#">Shop Info</a>
-                                        <a target="_blank" class="shop_link_impressum_more out_link" href="#">Shop Impressum</a>
-                                    </div>
                                 </div>
                             </div>
-                        <!-- Shop INFO  END-->
-
-                            <div class="data_safety_info">
-                                <p class="data_safery_title">Hinweis</p>
-                                <p class="data_safety_text">Moebel24 überträgt Ihre Angaben an den Vertragspartner zwecks Auftragsbearbeitung und nimmt hierfür eine Zwischenspeicherung vor. Anschliessend werden alle Anschrifts- und Bestelldaten gelöscht.</p>
-                            </div>
-
-                            <!-- Choosen products -->
-                            <div class="product_info_container">
-                            <p class="product_info_header info_card_header">Ihre Artikel bei porta.de</p>
-                                <!--  Choosen product card -->
-                                    <div class="pruduct_info_product_card">
-                                        <div class="product_img sale card_content_img">
-                                            <img src="img/product-3.png" alt="">
-                                        </div>
-                                        <div class="product_description">
-                                            <a href="#" class="product_title">Boxspringbett, weiß mit Federkernmatratze</a>
-                                            <p class="product_price"><span class="price">899,99</span> €</p>
-                                        </div>
-                                    </div>
-                                <!--  Choosen product card  END-->
-                            </div>
-                            <!-- Choosen products END -->
                         </div>
-                        <!-- Shop Card END -->
+                    <!-- Shop INFO  END-->
+                    </div>
+                    <!-- Shop Card END -->
+
+                    <!-- Bought Product Info Card -->
+                    <div class="shop_info_card service_contacts_card">
+                        <p class="info_card_header">Sie haben Fragen?</p>
+                        <p class="service_text">Moebel24 hilft dir bei allen Fragen zu deiner Bestellung.</p>
+                        <a href="tel:08007240831" class="footer_tel_phone">0800 7240831</a>
+                        <span class="tel_workingHours">(Mo-Fr von 10-17 Uhr)</span><br />
+                        <a href="mailto:support@moebel24.de" class="mail_adress">support@moebel24.de</a>
+                        <p class="order_number">Bitte halten Sie  für eine schnelle Bearbeitung Ihre Moebel24 Auftragsnummer <span class="order_id">BQXD29917</span> bereit</p>
+                    </div>
+                        <!-- Bought Product Info END -->
+                    <!-- Improve Card -->
+                    <div class="shop_info_card testimonials_card">
+                        <p class="info_card_header">Wir möchten uns verbessern.</p>
+                        <a href="#" class="button flex">BITTE BEWERTEN SIE UNS <img src="img/btn-next.png" alt=""></a>
+                    </div>
+                    <!-- Improve Card END-->
                 </div>
             </div>
         </div>
     </div>
 </div>
 <!-- Content END -->
-
-<!--  Total price block -->
-<div class="total_price_sec">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
-                <div class="row">
-                    <a href="" class="prev_page_link out_link">ZURÜCK</a>
-                    <div class="total_price_container clearfix">
-
-                        <div class="total_price_delivery total_price_type">
-                            <p class="total_price_delivery_price total_price"><span class="cost">4,90</span> €</p>
-                            <p class="total_price_delivery_description total_price_description">Versandkosten & Zahlungsart:</p>
-                        </div>
-
-                        <div class="total_price_tax total_price_type">
-                            <p class="total_price_tax_price total_price"><span class="cost">11,80 </span> €</p>
-                            <p class="total_price_tax_description total_price_description">Mehrwertsteuer:</p>
-                        </div>
-
-                        <div class="total_price_summary total_price_type">
-                            <p class="total_price_summary_price total_price"><span class="cost">1.174,60</span> €</p>
-                            <p class="total_price_summary_description total_price_description">Gesamtpreis:</p>
-                        </div>
-
-                        <p class="total_price_remark">(Alle Preise inkl. gesetzlicher Mehrwertsteuer)</p>
-                        <button class="button button_orange">BESTELLEN</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!--  Total price block END -->
 
 
 <!-- Footer -->
