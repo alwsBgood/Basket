@@ -1772,9 +1772,12 @@ input:-ms-input-placeholder {
   content: "\e260"; }
 
 @media (max-width: 490px) {
+  body {
+    font-size: 14px;
+    line-height: 16px; }
   .container {
-    padding-left: 20px;
-    padding-right: 20px; }
+    padding-left: 15px;
+    padding-right: 15px; }
   .header_logo {
     float: none; }
     .header_logo img {
