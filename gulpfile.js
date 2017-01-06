@@ -39,7 +39,7 @@ gulp.task('styles', function () {
 
 gulp.task('scripts', function() {
 	return gulp.src([
-		'./app/libs/jquery/jquery-2.1.4.min.js',
+		'./app/libs/jquery/jquery-2.1.3.min.js',
 		// './app/libs/niftymodal/classie.js',
     // './app/libs/niftymodal/modalEffects.js',
     // './app/libs/masked/mask.js',

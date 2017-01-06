@@ -2,10 +2,6 @@
 @import "vars.scss";
 
 //Custom Styles Here
-// .container{
-//   padding-left: 20px !important;
-//   padding-right: 20px !important;
-// }
 
 body {
   position: relative;
@@ -237,14 +233,14 @@ a:hover{color: #23527c !important;}
   position: relative;
 }
 
-.card_content_img.sale:before{
+.card_content_img.sale .sale_sign{
+  display: block;
   position: absolute;
   content: '';
   width: 35px;
   height: 35px;
   right: 5px;
   top: 5px;
-  background: url(../img/sale.png) center no-repeat;
 }
 
 .card_content_info{
@@ -499,9 +495,7 @@ a:hover{color: #23527c !important;}
   }
   li.done_step{
     .step_number{
-      background: #ff5100 url(../img/done.png) center no-repeat;
-      color: #fff;
-      span{visibility: hidden;}
+      span{display: none;}
     }
     .step_name{
       color: #444;
@@ -525,14 +519,13 @@ a:hover{color: #23527c !important;}
     display: inline-block;
   }
   li+li{margin-left: 20px;}
-  li:before{
+  li>img{
     position: absolute;
     content: '';
     width: 18px;
     height: 14px;
     left: 0px;
     top: 0px;
-    background: url(../img/list-ok.png) center no-repeat;
   }
 }
 
@@ -586,9 +579,13 @@ a:hover{color: #23527c !important;}
         vertical-align:middle;
         background: #fff;
         cursor:pointer;
+        img{
+          display: none;
+          padding: 2px;
+        }
     }
-    input[type="checkbox"]:checked + span {
-        background: url(../img/check.png) center no-repeat;
+    input[type="checkbox"]:checked + span img{
+        display: inline-block;
     }
   }
   .radio_filed{
@@ -611,9 +608,13 @@ a:hover{color: #23527c !important;}
         vertical-align:middle;
         background: #fff;
         cursor:pointer;
+        img{
+          display: none;
+          padding: 4px;
+        }
     }
-    input[type="radio"]:checked + span {
-        background: url(../img/radio.png) center no-repeat;
+    input[type="radio"]:checked + span img{
+        display: inline-block;
     }
   }
   .label_form_radio+.label_form_radio{margin-left: 60px;}
@@ -938,7 +939,7 @@ a:hover{color: #23527c !important;}
 }
 
 .stars{
-  background: url(../img/stars.png) top left no-repeat;
+  overflow: hidden;
   height: 14px;
 }
 
@@ -1013,14 +1014,13 @@ a:hover{color: #23527c !important;}
     li:nth-child(1):before{content: '1'}
     li:nth-child(2):before{content: '2'}
     li:nth-child(3):before{content: '3'}
-    li:after{
+    li img{
       position: absolute;
       content: '';
       width: 18px;
       height: 14px;
       right: 0px;
       top: 0px;
-      background: url(../img/list-ok.png) center no-repeat;
     }
   }
   .data_safety_hint{
@@ -1065,14 +1065,13 @@ a:hover{color: #23527c !important;}
     padding-left: 25px;
   }
   li+li{margin-top: 10px;}
-  li:before{
+  li img{
     position: absolute;
     content: '';
     width: 18px;
     height: 14px;
     left: 0px;
     top: 0px;
-    background: url(../img/list-ok.png) center no-repeat;
   }
 }
 
