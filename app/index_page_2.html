@@ -64,8 +64,8 @@
             <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 authorization_container">
                 <div class="row authorization_steps_block">
                     <ul class="authorization_steps">
-                        <li class="current_step done_step">
-                            <span class="step_number"><img src="img/done.png" alt=""></span>
+                        <li class="current_step ">
+                            <span class="step_number"><span class="number_of_step">1</span><img src="img/done.png" alt="" class="done_step_img"></span>
                             <span class="step_name">E-Mail</span>
                         </li>
                         <li class="inactive_step">
@@ -87,8 +87,10 @@
                     <p class="first_form_title form_title">Die Bestellung geht an:</p>
                     <form class="authorization_form" id="first_step_form" action="javascript:void(null);">
 
+                    <input type="hidden" name="step_count" value="1"/>
+
                         <div class="field">
-                            <input required="" placeholder="E-Mail Adresse" type="email" name="email" class="form_input_mail form_input">
+                            <input required="required" placeholder="E-Mail Adresse" type="email" name="email" class="form_input_mail form_input">
                         </div>
 
                         <p class="small_text">Die E-Mail Adresse wird lediglich für die Bestellung bei HOME24.de verwendet.</p>
@@ -96,7 +98,7 @@
                        <div class="field">
                             <label class="label_form_checkbox clearfix">
                                <input name="subscribe" value="subscribe" class="first_form_input form_checkbox" type="checkbox">
-                               <span class="styled_chekbox"><img src="img/check.png" alt=""></span>
+                               <span class="styled_chekbox"><img src="img/check_form.png" alt=""></span>
                                <span>Ja, ich möchte den Moebel24 Newsletter mit interessanten Angeboten zu Möbel & Einrichtung</span>
                            </label>
                        </div>
@@ -104,13 +106,13 @@
 
                             <div class="field radio_filed">
                                 <label class="label_form_radio">
-                                    <input required="" class="first_form_input form_radio" type="radio" name="sex" value="Frau">
+                                    <input required="required" class="first_form_input form_radio" type="radio" name="sex" value="Frau">
                                     <span class="styled_radio"><img src="img/radio.png" alt=""></span>
                                     <span>Frau</span>
                                 </label>
 
                                 <label class="label_form_radio">
-                                   <input required="" class="first_form_input form_radio" type="radio" name="sex" value="Herr">
+                                   <input required="required" class="first_form_input form_radio" type="radio" name="sex" value="Herr">
                                    <span class="styled_radio"><img src="img/radio.png" alt=""></span>
                                    <span>Herr</span>
                                 </label>
@@ -118,11 +120,11 @@
 
 
                         <div class="field short_field">
-                            <input required="" placeholder="Vorname" type="text" name="name" class="form_input_name form_input">
+                            <input required="required" placeholder="Vorname" type="text" name="name" class="form_input_name form_input">
                         </div>
 
                         <div class="field short_field">
-                            <input required="" placeholder="Nachname" type="text" name="surname" class="form_input_name form_input">
+                            <input required="required" placeholder="Nachname" type="text" name="surname" class="form_input_name form_input">
                         </div>
 
                         <!--  Hidden Adress Fileds  -->
@@ -287,7 +289,7 @@
 
                             <div class="post_fields clearfix inputs_row">
                                 <div class="field index_field">
-                                    <input title="Geben Sie fünf Zahlen PLZ" required="" placeholder="PLZ" type="text" name="plz" class="form_input_plz form_input" pattern="[0-9]{5}">
+                                    <input title="Geben Sie fünf Zahlen PLZ" required="" placeholder="PLZ" type="text" name="plz" class="form_input_plz form_input">
                                 </div>
 
                                 <div class="field location_field">
@@ -360,7 +362,7 @@
                                     </div>
                                     <div class="product_description">
                                         <a href="#" class="product_title">Boxspringbett, weiß mit Federkernmatratze</a>
-                                        <p class="product_price"><span class="price">899,99</span> €</p>
+                                        <p class="product_price"><span class="good_price">899,99</span> €</p>
                                     </div>
                                 </div>
                             <!--  Choosen product card  END-->
@@ -372,7 +374,7 @@
                                     </div>
                                     <div class="product_description">
                                         <a href="#" class="product_title">Esstisch Glas, rund</a>
-                                        <p class="product_price"><span class="price">195.95</span> €</p>
+                                        <p class="product_price"><span class="good_price">195.95</span> €</p>
                                     </div>
                                 </div>
                             <!--  Choosen product card END-->

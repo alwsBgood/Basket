@@ -251,7 +251,7 @@ a:hover {
     color: #333333;
     font-size: 11px;
     line-height: 16px; }
-  .card_content_price .price {
+  .card_content_price .good_price {
     display: inline-block;
     min-width: 90px;
     text-align: right;
@@ -285,7 +285,7 @@ a:hover {
   width: 100%; }
   .delivery_more_info .more_info_description li + li {
     margin-top: 20px; }
-  .delivery_more_info .more_info_description .price {
+  .delivery_more_info .more_info_description .good_price {
     font: 12px "ArialRegular", sans-serif; }
   .delivery_more_info .more_info_description .title_text {
     color: #333333;
@@ -309,7 +309,7 @@ a:hover {
 
 .price_summary {
   margin-top: 35px; }
-  .price_summary .price {
+  .price_summary .good_price {
     font-size: 20px; }
 
 .total_price_sec {
@@ -374,9 +374,10 @@ a:hover {
 
 .authorization_steps {
   padding: 5px 0;
-  font: 21px/40px "ArialBold", sans-serif; }
+  font: 21px/22px "ArialBold", sans-serif; }
   .authorization_steps li {
-    display: inline-block; }
+    display: inline-block;
+    vertical-align: top; }
   .authorization_steps li + li {
     position: relative;
     margin-left: 75px; }
@@ -400,11 +401,18 @@ a:hover {
     height: 40px;
     -webkit-border-radius: 50%;
     border-radius: 50%; }
+    .authorization_steps .step_number span {
+      line-height: 40px; }
+    .authorization_steps .step_number .done_step_img {
+      display: none; }
   .authorization_steps .current_step .step_number {
     background: #535353;
     color: #fff; }
   .authorization_steps .current_step .step_name {
-    color: #444; }
+    color: #444;
+    line-height: 44px;
+    vertical-align: top;
+    display: inline-block; }
   .authorization_steps .inactive_step {
     color: #bbb; }
     .authorization_steps .inactive_step .step_number {
@@ -413,7 +421,12 @@ a:hover {
   .authorization_steps li.done_step .step_number span {
     display: none; }
   .authorization_steps li.done_step .step_name {
-    color: #444; }
+    color: #444;
+    line-height: 44px;
+    vertical-align: top;
+    display: inline-block; }
+  .authorization_steps li.done_step .done_step_img {
+    display: inline-block; }
   .authorization_steps li.done_step + li:before {
     border-top: 3px solid #444;
     border-right: 3px solid #444; }
@@ -515,6 +528,7 @@ a:hover {
     margin-left: 15px; }
 
 .hidden_form_inputs {
+  display: none;
   margin-top: 25px; }
   .hidden_form_inputs .inputs_row {
     margin-top: 20px; }
@@ -522,15 +536,15 @@ a:hover {
     font-size: 14px;
     line-height: 17px;
     margin-bottom: 10px; }
-  .hidden_form_inputs select {
+  .hidden_form_inputs .form_input_date {
     height: 40px;
     line-height: 40px;
     padding: 0 10px;
     font: 16px/40px "ArialRegular", sans-serif; }
-  .hidden_form_inputs select:invalid {
+  .hidden_form_inputs .form_input_date:invalid {
     color: #888;
     background-color: #eeeeee; }
-  .hidden_form_inputs select + select {
+  .hidden_form_inputs .form_input_date + .form_input_date {
     margin-left: 30px; }
   .hidden_form_inputs .post_fields .index_field {
     max-width: 130px;

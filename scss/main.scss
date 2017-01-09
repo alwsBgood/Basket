@@ -303,7 +303,7 @@ a:hover{color: #23527c !important;}
     font-size: 11px;
     line-height: 16px;
   }
-  .price{
+  .good_price{
     display: inline-block;
     min-width: 90px;
     text-align: right;
@@ -342,7 +342,7 @@ a:hover{color: #23527c !important;}
   min-width: 250px;
   width: 100%;
   li+li{margin-top: 20px;}
-  .price{
+  .good_price{
     font: 12px $main_font;
   }
   .title_text{
@@ -371,7 +371,7 @@ a:hover{color: #23527c !important;}
 
 .price_summary{
   margin-top: 35px;
-  .price{
+  .good_price{
     font-size: 20px;
   }
 }
@@ -452,8 +452,11 @@ a:hover{color: #23527c !important;}
 
 .authorization_steps{
   padding: 5px 0;
-  font: 21px/40px $bold;
-  li{display: inline-block;}
+  font: 21px/22px $bold;
+  li{
+    display: inline-block;
+    vertical-align: top;
+  }
   li+li{
     position: relative;
     margin-left: 75px;
@@ -476,6 +479,12 @@ a:hover{color: #23527c !important;}
     width: 40px;
     height: 40px;
     border-radius: 50%;
+    span{
+      line-height: 40px;
+    }
+    .done_step_img{
+      display: none;
+    }
   }
   .current_step{
     .step_number{
@@ -484,6 +493,9 @@ a:hover{color: #23527c !important;}
     }
     .step_name{
       color: #444;
+      line-height: 44px;
+      vertical-align: top;
+      display: inline-block;
     }
   }
   .inactive_step{
@@ -494,11 +506,15 @@ a:hover{color: #23527c !important;}
     }
   }
   li.done_step{
-    .step_number{
-      span{display: none;}
-    }
+    .step_number span{display: none;}
     .step_name{
       color: #444;
+      line-height: 44px;
+      vertical-align: top;
+      display: inline-block;
+    }
+    .done_step_img{
+      display: inline-block;
     }
   }
   li.done_step+li:before{
@@ -622,6 +638,7 @@ a:hover{color: #23527c !important;}
 }
 
 .hidden_form_inputs{
+  display: none;
   margin-top: 25px;
   .inputs_row{
     margin-top: 20px;
@@ -631,18 +648,18 @@ a:hover{color: #23527c !important;}
     line-height: 17px;
     margin-bottom: 10px;
   }
-  select{
+  .form_input_date{
     height: 40px;
     line-height: 40px;
     padding: 0 10px;
 
     font: 16px/40px $main_font;
   }
-  select:invalid{
+  .form_input_date:invalid{
     color: #888;
     background-color: #eeeeee;
   }
-  select+select{margin-left: 30px;}
+  .form_input_date+.form_input_date{margin-left: 30px;}
   .post_fields{
     .index_field{
       max-width: 130px;
