@@ -183,6 +183,8 @@ a:hover {
 .card_content_img {
   display: inline-block;
   margin-right: 15px; }
+  .card_content_img img {
+    width: 114px; }
 
 .card_content_img.sale {
   position: relative; }
@@ -658,6 +660,12 @@ a:hover {
   margin-top: 10px;
   font: 15px/13px "ArialBold", sans-serif; }
 
+.pruduct_info_product_card .product_img {
+  display: inline-block;
+  margin-right: 15px; }
+  .pruduct_info_product_card .product_img img {
+    width: 86px; }
+
 .pruduct_info_product_card + .pruduct_info_product_card {
   margin-top: 15px; }
 
@@ -790,6 +798,8 @@ a:hover {
 
 .bought_product_block .bought_product_img {
   display: inline-block; }
+  .bought_product_block .bought_product_img img {
+    width: 114px; }
 
 .bought_product_block .product_info {
   padding: 15px;
