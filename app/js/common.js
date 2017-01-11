@@ -1,4 +1,4 @@
-// Скрипт отправки 2.55
+
 $(function() {
   $("[name=send]").click(function () {
     $(":input.error").removeClass('error');
@@ -10,6 +10,7 @@ $(function() {
     var msg = $('input, textarea, select');
     var send_btn = ('[name=send]');
     var send_options = ('[name=step_count]');
+    var form_action = ('[name=action]').val();
 
     $(ref).each(function() {
       if ($(this).val() == '') {
@@ -55,36 +56,39 @@ $(function() {
       $(send_options).each(function() {
         var form = $(this).closest('form');
         if ($(this).val() == '1') {
-          // Открываем скрытые поля
+          // Open hidden fields
           $('.hidden_form_inputs').slideDown();
-          // Добавляем валидацию скрытых полей
+          // Adding validation of hidden fields
           $(form).find('input[required]').each(function() {
             $(this).attr('required', 'required');;
           })
-          // Меняем отображение текущего шага
+          // Change current step count on page
           $('.current_step').addClass('done_step');
           $('.inactive_step').addClass('current_step').removeClass('inactive_step');
-          // Активируем кнопку
+          // activate button
           setTimeout(function(){  $("[name=send]").removeAttr("disabled"); }, 1000);
-          // Инкрементим шаг отправки чтоб перейти к следующему блоку
+          // Change send options to get to the next step
           $(send_options).val(2);
         } else {
-          $.ajax({
-            type: 'POST',
-            // отправляем данные на нужный адресс
-            url: 'http://www.moebel24.de/CheckoutCombo.do',
-            data: msg,
-            success: function() {
-              setTimeout(function(){  $("[name=send]").removeAttr("disabled"); }, 1000);
-                // Настройки после удачной отправки
-                $('form').trigger("reset");
-                 window.location = ""; // url куда редиректить после отправки
-               },
-               error: function(xhr, str) {
-                console.log('erorr' + xhr.responseCode);
-                alert('Возникла ошибка: ' + xhr.responseCode);
-              }
-            });
+          form.attr('action', form_action);
+          form.submit();
+
+          // $.ajax({
+          //   type: 'POST',
+          //   // Send data
+          //   url: 'http://www.moebel24.de/CheckoutCombo.do',
+          //   data: msg,
+          //   success: function() {
+          //     setTimeout(function(){  $("[name=send]").removeAttr("disabled"); }, 1000);
+          //       // Settings after sending
+          //       $('form').trigger("reset");
+          //        window.location = ""; // redirect url enter here.
+          //      },
+          //      error: function(xhr, str) {
+          //       console.log('erorr' + xhr.responseCode);
+          //       alert('Возникла ошибка: ' + xhr.responseCode);
+          //     }
+          //   });
         }
       });
     }
@@ -94,16 +98,39 @@ $(function() {
 
 
 // Form trigger
-
 $(".first_form_trigger").click(function() {
   $('#first_step_form').submit();
 });
 
-// Checkbox
 
-$('[type=checkbox]').click(function() {
-  $(this).toggleClass('input_checked');
-  $(this).hasClass( "input_checked" ) ? $(this).val(1) : $(this).val(0)
+// Checkbox
+jQuery(document).ready(function($) {
+  if( $('[type=checkbox]').val() == 1 ){
+    $('[type=checkbox]').prop('checked', true);
+  } else {
+    $('[type=checkbox]').prop('checked', false);
+  }
+
+  $('[type=checkbox]').click(function() {
+    $(this).toggleClass('input_checked');
+    $(this).hasClass( "input_checked" ) ? $(this).val(1) : $(this).val(0)
+  });
+});
+
+// Radio button
+jQuery(document).ready(function($) {
+  if( $('[name=sex_hidden]').val() == 'Frau' ){
+    $('.frau_radio').prop('checked', true);
+  } else {
+    $('.herr_radio').prop('checked', true);
+  }
+
+  $('.frau_radio').click(function() {
+    $('[name=sex_hidden]').val("Frau");
+  })
+  $('.herr_radio').click(function() {
+    $('[name=sex_hidden]').val("Herr");
+  })
 });
 
 

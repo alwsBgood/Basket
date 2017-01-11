@@ -85,9 +85,12 @@
                 </div>
                 <div class="row first_form_block form_block">
                     <p class="first_form_title form_title">Die Bestellung geht an:</p>
-                    <form class="authorization_form" id="first_step_form" action="javascript:void(null);">
+                <form class="authorization_form" id="first_step_form" action="javascript:void(null);">
 
+
+                    <input type="hidden" name="action" value="/CheckoutCombo.do"/>
                     <input type="hidden" name="step_count" value="1"/>
+                    <input type="hidden" name="sex_hidden" value="Herr"/>
 
                         <div class="field">
                             <input required="required" placeholder="E-Mail Adresse" type="email" name="email" class="form_input_mail form_input">
@@ -97,7 +100,7 @@
 
                        <div class="field">
                             <label class="label_form_checkbox clearfix">
-                               <input name="subscribe" value="subscribe" class="first_form_input form_checkbox" type="checkbox">
+                               <input name="subscribe" value="" class="first_form_input form_checkbox" type="checkbox">
                                <span class="styled_chekbox"><img src="img/check_form.png" alt=""></span>
                                <span>Ja, ich möchte den Moebel24 Newsletter mit interessanten Angeboten zu Möbel & Einrichtung</span>
                            </label>
@@ -106,13 +109,13 @@
 
                             <div class="field radio_filed">
                                 <label class="label_form_radio">
-                                    <input required="required" class="first_form_input form_radio" type="radio" name="sex" value="Frau">
+                                    <input required="required" class="first_form_input form_radio frau_radio" type="radio" name="sex" value="Frau">
                                     <span class="styled_radio"><img src="img/radio.png" alt=""></span>
                                     <span>Frau</span>
                                 </label>
 
                                 <label class="label_form_radio">
-                                   <input required="required" class="first_form_input form_radio" type="radio" name="sex" value="Herr">
+                                   <input required="required" class="first_form_input form_radio herr_radio" type="radio" name="sex" value="Herr">
                                    <span class="styled_radio"><img src="img/radio.png" alt=""></span>
                                    <span>Herr</span>
                                 </label>
