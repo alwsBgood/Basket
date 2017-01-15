@@ -6,11 +6,11 @@ $(function() {
 
     var error;
     var btn = $(this);
-    var ref = ('[required=required]');
+    var ref = $('[required=required]');
     var msg = $('input, textarea, select');
-    var send_btn = ('[name=send]');
-    var send_options = ('[name=step_count]');
-    var form_action = ('[name=action]').val();
+    var send_btn = $('[name=send]');
+    var send_options = $('[name=step_count]');
+    var form_action = $('[name=action]').val();
 
     $(ref).each(function() {
       if ($(this).val() == '') {
@@ -70,6 +70,7 @@ $(function() {
           // Change send options to get to the next step
           $(send_options).val(2);
         } else {
+          $(this).attr('disabled', true);
           form.attr('action', form_action);
           form.submit();
 
@@ -102,18 +103,24 @@ $(".first_form_trigger").click(function() {
   $('#first_step_form').submit();
 });
 
+// Select
+$("select").change(function(){
+    var selectValue = $(this).children(":selected").text();
+    $(this).val(selectValue);
+});
 
 // Checkbox
 jQuery(document).ready(function($) {
   if( $('[type=checkbox]').val() == 1 ){
     $('[type=checkbox]').prop('checked', true);
+    $('[type=checkbox]').addClass('input_checked');
   } else {
     $('[type=checkbox]').prop('checked', false);
   }
 
   $('[type=checkbox]').click(function() {
     $(this).toggleClass('input_checked');
-    $(this).hasClass( "input_checked" ) ? $(this).val(1) : $(this).val(0)
+    $(this).hasClass( "input_checked" ) ? $(this).val(1) : $(this).val(0);
   });
 });
 
