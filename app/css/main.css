@@ -398,6 +398,8 @@ a:hover {
     transform: rotate(45deg); }
   .authorization_steps .step_number {
     display: inline-block;
+    float: left;
+    margin-right: 5px;
     text-align: center;
     width: 40px;
     height: 40px;
@@ -425,8 +427,7 @@ a:hover {
   .authorization_steps li.done_step .step_name {
     color: #444;
     line-height: 44px;
-    vertical-align: top;
-    display: inline-block; }
+    vertical-align: top; }
   .authorization_steps li.done_step .done_step_img {
     display: inline-block; }
   .authorization_steps li.done_step + li:before {
@@ -802,7 +803,7 @@ a:hover {
     width: 114px; }
 
 .bought_product_block .product_info {
-  padding: 15px;
+  padding: 0 15px 15px;
   display: inline-block;
   vertical-align: top; }
   .bought_product_block .product_info .product_info_name {
@@ -820,6 +821,13 @@ a:hover {
 
 .bought_product_block .product_info_row + .product_info_row {
   margin-top: 10px; }
+
+.bought_product_block .card_pratnerShop_title {
+  margin-top: 10px; }
+  .bought_product_block .card_pratnerShop_title .partnerShop_name img {
+    height: 20px;
+    margin: 0 5px;
+    vertical-align: bottom; }
 
 .bought_product_block + .bought_product_block {
   margin-top: 20px; }
@@ -1089,7 +1097,8 @@ input:-ms-input-placeholder {
       margin-top: -5px; }
     .authorization_steps .step_number {
       width: 30px;
-      height: 30px; }
+      height: 30px;
+      margin-right: 15px; }
     .authorization_steps .inactive_step .step_number {
       line-height: 28px; }
   .authorization_info_block {
@@ -1137,6 +1146,10 @@ input:-ms-input-placeholder {
   .bought_product_block .bought_product_img {
     display: block;
     text-align: center; }
+  .bought_product_block .card_pratnerShop_title {
+    text-align: center;
+    border-bottom: 1px solid #D3D3D3;
+    padding-bottom: 10px; }
   .footer {
     padding-bottom: 20px; }
   .footer_block {
@@ -1211,6 +1224,10 @@ input:-ms-input-placeholder {
     margin: 30px auto;
     max-width: 100%;
     padding-left: 40px; }
+  .bought_product_block .product_info {
+    max-width: 280px; }
+  .bought_product_block .card_pratnerShop_title {
+    text-align: center; }
   .card_adress {
     max-width: 45%; }
   .payment_info {
@@ -1298,6 +1315,10 @@ input:-ms-input-placeholder {
     max-width: 100%; }
   .testimonials_card .button img {
     display: none; }
+  .bought_product_block .product_info {
+    max-width: 250px; }
+  .bought_product_block .card_pratnerShop_title {
+    text-align: center; }
   .footer_block {
     max-width: 240px;
     padding: 0 20px 0 0; } }
@@ -1325,6 +1346,10 @@ input:-ms-input-placeholder {
     max-width: 290px; }
   .payment_info {
     max-width: 260px; }
+  .bought_product_block .product_info {
+    max-width: 355px; }
+  .bought_product_block .card_pratnerShop_title {
+    text-align: center; }
   .footer_block {
     max-width: 280px;
     padding: 0 20px 0 0; } }

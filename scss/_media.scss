@@ -96,6 +96,7 @@
     .step_number{
       width: 30px;
       height: 30px;
+      margin-right: 15px;
     }
     .inactive_step{
       .step_number{
@@ -172,6 +173,11 @@
     .bought_product_img{
       display: block;
       text-align: center;
+    }
+    .card_pratnerShop_title{
+      text-align: center;
+      border-bottom: 1px solid #D3D3D3;
+      padding-bottom: 10px;
     }
   }
   // footer
@@ -274,6 +280,15 @@
     margin: 30px auto;
     max-width: 100%;
     padding-left: 40px;
+  }
+    // Chosen products block (page 4)
+  .bought_product_block{
+    .product_info{
+      max-width: 280px;
+    }
+    .card_pratnerShop_title{
+      text-align: center;
+    }
   }
   // User info and payment way
   .card_adress{
@@ -397,6 +412,14 @@
       display: none;
     }
   }
+  .bought_product_block{
+    .product_info{
+      max-width: 250px;
+    }
+    .card_pratnerShop_title{
+      text-align: center;
+    }
+  }
   // footer
   .footer_block{
     max-width: 240px;
@@ -433,6 +456,15 @@
   }
   .payment_info{
     max-width: 260px;
+  }
+    // Chosen products block (page 4)
+  .bought_product_block{
+    .product_info{
+      max-width: 355px;
+    }
+    .card_pratnerShop_title{
+      text-align: center;
+    }
   }
   //footer
   .footer_block{

@@ -478,6 +478,8 @@ a:hover{color: #23527c !important;}
   }
   .step_number{
     display: inline-block;
+    float: left;
+    margin-right: 5px;
     text-align: center;
     width: 40px;
     height: 40px;
@@ -514,7 +516,7 @@ a:hover{color: #23527c !important;}
       color: #444;
       line-height: 44px;
       vertical-align: top;
-      display: inline-block;
+      // display: inline-block;
     }
     .done_step_img{
       display: inline-block;
@@ -982,7 +984,7 @@ a:hover{color: #23527c !important;}
     }
   }
   .product_info{
-    padding: 15px;
+    padding: 0 15px 15px;
     display: inline-block;
     vertical-align: top;
     .product_info_name{
@@ -1002,6 +1004,14 @@ a:hover{color: #23527c !important;}
   }
   .product_info_row+.product_info_row{
     margin-top: 10px;
+  }
+  .card_pratnerShop_title{
+    margin-top: 10px;
+    .partnerShop_name img{
+      height: 20px;
+      margin: 0 5px;
+      vertical-align: bottom;
+    }
   }
 }
 
