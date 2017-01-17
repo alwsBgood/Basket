@@ -428,7 +428,7 @@ a:hover {
         .authorization_steps .inactive_step .step_number span {
           line-height: 38px; }
       .authorization_steps .inactive_step .step_name {
-        line-height: 40px; }
+        line-height: 44px; }
 .authorization_steps li.done_step .step_number span {
     display: none; }
 .authorization_steps li.done_step .step_name {
