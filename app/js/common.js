@@ -108,19 +108,9 @@ $(".first_form_trigger").click(function() {
   $('#first_step_form').submit();
 });
 
-// Select
-jQuery(document).ready(function($) {
-  var defaultSelectValue = $("select").val();
-  $("option[value=" + defaultSelectValue + "]").attr('selected', true);
-  $("select").change(function(){
-      var selectValue = $(this).children(":selected").text();
-      $(this).val(selectValue);
-  });
-});
-
 // Checkbox
 jQuery(document).ready(function($) {
-  if( $('[type=checkbox]').val() == 1 ){
+  if ($('[name=billingEmail2]').val() == 1) {
     $('[type=checkbox]').prop('checked', true);
     $('[type=checkbox]').addClass('input_checked');
   } else {
@@ -129,23 +119,29 @@ jQuery(document).ready(function($) {
 
   $('[type=checkbox]').click(function() {
     $(this).toggleClass('input_checked');
-    $(this).hasClass( "input_checked" ) ? $(this).val(1) : $(this).val(0);
+    $(this).hasClass( "input_checked" )
+        ? $('[name=billingEmail2]').val(1)
+        : $('[name=billingEmail2]').val(0);
   });
 });
 
 // Radio button
 jQuery(document).ready(function($) {
-  if( $('[name=sex_hidden]').val() == 'Frau' ){
+
+  var frau_value = $('.frau_radio').val();
+  var herr_value = $('.herr_radio').val();
+
+  if ($('[name=sex_hidden]').val() == frau_value) {
     $('.frau_radio').prop('checked', true);
   } else {
     $('.herr_radio').prop('checked', true);
   }
 
   $('.frau_radio').click(function() {
-    $('[name=sex_hidden]').val("Frau");
+    $('[name=sex_hidden]').val(frau_value);
   })
   $('.herr_radio').click(function() {
-    $('[name=sex_hidden]').val("Herr");
+    $('[name=sex_hidden]').val(herr_value);
   })
 });
 
@@ -153,18 +149,18 @@ jQuery(document).ready(function($) {
 // Stars
 switch($('.stars').data('stars')) {
   case  5:
-  $('.stars').css('width', '71px')
-  break;
+    $('.stars').css('width', '71px')
+    break;
   case  4:
-  $('.stars').css('width', '57px')
-  break;
+    $('.stars').css('width', '57px')
+    break;
   case 3:
-  $('.stars').css('width', '43px')
-  break;
+    $('.stars').css('width', '43px')
+    break;
   case 2:
-  $('.stars').css('width', '43px')
-  break;
+    $('.stars').css('width', '43px')
+    break;
   case 1:
-  $('.stars').css('width', '43px')
-  break;
+    $('.stars').css('width', '43px')
+    break;
 }
