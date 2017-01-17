@@ -508,7 +508,9 @@ a:hover{color: #23527c !important;}
     .step_number{
       line-height: 38px;
       border: 2px solid #bbb;
+      span{line-height: 38px;}
     }
+    .step_name{line-height: 40px;}
   }
   li.done_step{
     .step_number span{display: none;}

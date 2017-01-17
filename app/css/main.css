@@ -420,11 +420,15 @@ a:hover {
     line-height: 44px;
     vertical-align: top;
     display: inline-block; }
-.authorization_steps .inactive_step {
-    color: #bbb; }
-.authorization_steps .inactive_step .step_number {
-    line-height: 38px;
-    border: 2px solid #bbb; }
+    .authorization_steps .inactive_step {
+      color: #bbb; }
+      .authorization_steps .inactive_step .step_number {
+        line-height: 38px;
+        border: 2px solid #bbb; }
+        .authorization_steps .inactive_step .step_number span {
+          line-height: 38px; }
+      .authorization_steps .inactive_step .step_name {
+        line-height: 40px; }
 .authorization_steps li.done_step .step_number span {
     display: none; }
 .authorization_steps li.done_step .step_name {
