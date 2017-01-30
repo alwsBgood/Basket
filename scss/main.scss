@@ -84,6 +84,12 @@ a:hover{color: #23527c !important;}
   color: #7AC500;
 }
 
+.disclamer{
+  margin-top: 30px;
+  font-size: 10px;
+  color: #a7a7a7;
+}
+
 //Header Styles
 
 .header_sec{
@@ -341,6 +347,10 @@ a:hover{color: #23527c !important;}
 
 .price_delivery{
   position: relative;
+  margin-bottom: 5px;
+}
+
+.price_prod{
   margin-bottom: 5px;
 }
 
@@ -807,6 +817,11 @@ a:hover{color: #23527c !important;}
   }
 }
 
+.radio_text_payInfo{
+  color: green;
+  font-family: $bold;
+  font-size: 13px
+}
 
 .pruduct_info_product_card{
   .product_description{

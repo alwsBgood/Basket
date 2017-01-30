@@ -48,7 +48,7 @@
             <div class="row">
                 <ul class="breadcrumb">
                     <li class="home"><a href="https://www.moebel24.de/" id="crumb-welcome" class="crumb first"><i class="glyphicon glyphicon-home"></i> Willkommen zu Hause</a></li>
-                    <li id="crumb-grill-zubehoer" class="crumb active">Adresse & Bezahlung</li>
+                    <li id="crumb-grill-zubehoer" class="crumb active">Adresse & Zahlung</li>
                 </ul>
             </div>
         </div>
@@ -72,11 +72,15 @@
                             <span class="step_number"><img src="img/done.png"></span>
                             <span class="step_name">Adresse & Zahlung</span>
                         </li>
+                        <li class="current_step ">
+                            <span class="step_number"><span class="number_of_step">3</span><img src="img/done.png" alt="" class="done_step_img"></span>
+                            <span class="step_name">Kaufen</span>
+                        </li>
                     </ul>
                 </div>
                 <div class="row authorization_info_block">
                     <ul class="authorization_info">
-                        <li><img src="img/list-ok.png" alt="">Jetzt kaufen</li>
+                        <li><img src="img/list-ok.png" alt="">Direktkauf</li>
                         <li><img src="img/list-ok.png" alt="">Ohne Registrierung</li>
                         <li><img src="img/list-ok.png" alt="">Schnell & Sicher</li>
                         <li><img src="img/list-ok.png" alt="">Kundenservice</li>
@@ -88,7 +92,7 @@
                 <div class="confirmation_sec row">
                     <h3>Alles korrekt?</h3>
                     <div class="card_adress">
-                        <p class="card_title">Deine Lieferadresse</p>
+                        <p class="card_title">Ihre Lieferadresse</p>
                         <div class="user_data_block">
                             <p class="user_sex_prefix">Herr</p>
                             <p class="user_full_name">
@@ -107,8 +111,8 @@
                     </div>
                     <div class="payment_info">
                         <div class="card_payment_way payment_info_card">
-                            <div class="card_title">Deine Rechnungsadresse</div>
-                            <p class="payment_way">Wie deine Lieferadresse</p>
+                            <div class="card_title"> Ihre Rechnungsadresse</div>
+                            <p class="payment_way">Wie Ihre Lieferadresse</p>
                             <p class="payment_remark"><i class="glyphicon glyphicon-info-sign"></i> <span>Alternative Rechnungsadresse nicht möglich.</span></p>
                         </div>
                         <div class="card_payment payment_info_card">
@@ -122,7 +126,7 @@
                 <!-- Chosen products block -->
                 <div class="products_sec_confirmation row ">
                     <div class="products_sec_header">
-                        <h3>Dein Warenkorb</h3>
+                        <h3> Ihr Warenkorb</h3>
                     </div>
                     <div class="product_cards">
                         <!--  Product Card  -->
@@ -138,6 +142,16 @@
 
                                 <!-- Prices Block -->
                                 <div class="card_content_price">
+                                    <div class="price_prod price_type">
+                                        <p class="price_prod_price good_price"><span class="cost">162,80 </span> €</p>
+                                        <p class="price_prod_description price_description">Productpreis:</p>
+                                    </div>
+
+                                    <div class="price_tax price_type">
+                                        <p class="price_tax_price good_price"><span class="cost">162,80 </span> €</p>
+                                        <p class="price_tax_description price_description">Mehrwertsteuer:</p>
+                                    </div>
+
                                     <div class="price_delivery price_type">
                                         <p class="price_delivery_price good_price"><span class="cost">24,90</span> €</p>
                                         <p class="price_delivery_description price_description">Versandkosten & Zahlungsart:</p>
@@ -164,11 +178,6 @@
                                         <!-- Info about delivery END -->
                                     </div>
 
-                                    <div class="price_tax price_type">
-                                        <p class="price_tax_price good_price"><span class="cost">162,80 </span> €</p>
-                                        <p class="price_tax_description price_description">Mehrwertsteuer:</p>
-                                    </div>
-
                                     <div class="price_summary price_type">
                                         <p class="price_summary_price good_price"><span class="cost">899,99</span> €</p>
                                         <p class="price_summary_description price_description">Gesamtpreis:</p>
@@ -178,16 +187,21 @@
 
                                 <div class="card_content_info">
                                     <a target="_blank" href="#" class="card_type">Produktansicht</a>
-                                    <div class="card_info_onStock">
+                                    <div class="card_info_onStock delivery">
                                         <img src="img/onstock.png" alt="">
                                         <span>Auf Lager</span>
+                                        <span class="delivery_time">2 days</span>
+                                    </div>
+                                    <div class="card_info_onStock no--delivey">
+                                        <img src="img/onstock_orange.png" alt="">
+                                        <span>Lieferzeit wird angefragt</span>
                                     </div>
                                 </div>
 
                                 <!-- Shop Info -->
                                 <div class="card_content_partnerShop">
                                     <div class="card_pratnerShop_title">
-                                        <span>Sie bestellen über <img src="img/moeabal-logo-small.png" alt=""></span>
+                                        <span>Sie bestellen über Moebel24</span>
                                         <span class="partnerShop_name">bei home24.de</span>
                                         <span>(Vertagspartner)</span>
                                     </div>
@@ -221,6 +235,14 @@
 
                                 <!-- Prices Block -->
                                 <div class="card_content_price">
+                                    <div class="price_prod price_type">
+                                        <p class="price_prod_price good_price"><span class="cost">162,80 </span> €</p>
+                                        <p class="price_prod_description price_description">Productpreis:</p>
+                                    </div>
+                                    <div class="price_tax price_type">
+                                        <p class="price_tax_price good_price"><span class="cost">162,80 </span> €</p>
+                                        <p class="price_tax_description price_description">Mehrwertsteuer:</p>
+                                    </div>
                                     <div class="price_delivery price_type">
                                         <p class="price_delivery_price good_price"><span class="cost">24,90</span> €</p>
                                         <p class="price_delivery_description price_description">Versandkosten & Zahlungsart:</p>
@@ -247,11 +269,6 @@
                                         <!-- Info about delivery END -->
                                     </div>
 
-                                    <div class="price_tax price_type">
-                                        <p class="price_tax_price good_price"><span class="cost">162,80 </span> €</p>
-                                        <p class="price_tax_description price_description">Mehrwertsteuer:</p>
-                                    </div>
-
                                     <div class="price_summary price_type">
                                         <p class="price_summary_price good_price"><span class="cost">899,99</span> €</p>
                                         <p class="price_summary_description price_description">Gesamtpreis:</p>
@@ -259,17 +276,22 @@
                                 </div>
                                 <!-- Prices Block End -->
 
-                                <div class="card_content_info">
+                                <div class="card_content_info isdelivered">
                                     <a target="_blank" href="#" class="card_type">Produktansicht</a>
-                                    <div class="card_info_onStock">
+                                    <div class="card_info_onStock delivery">
                                         <img src="img/onstock.png" alt="">
                                         <span>Auf Lager</span>
+                                        <span class="delivery_time">2 days</span>
+                                    </div>
+                                    <div class="card_info_onStock no--delivey">
+                                        <img src="img/onstock_orange.png" alt="">
+                                        <span>Lieferzeit wird angefragt</span>
                                     </div>
                                 </div>
                                 <!-- Shop Info -->
                                 <div class="card_content_partnerShop">
                                     <div class="card_pratnerShop_title">
-                                        <span>Sie bestellen über <img src="img/moeabal-logo-small.png" alt=""></span>
+                                        <span>Sie bestellen über Moebel24</span>
                                         <span class="partnerShop_name">porta.de</span>
                                         <span>(Vertagspartner)</span>
                                     </div>
@@ -330,9 +352,6 @@
                         <p class="product_info_header info_card_header">Ihre Artikel bei <span class="shop_site_name">home24.de</span></p>
                             <!--  Choosen product card -->
                                 <div class="pruduct_info_product_card">
-                                    <div class="product_img sale">
-                                        <img src="img/product-1.png" alt="">
-                                    </div>
                                     <div class="product_description">
                                         <a href="#" class="product_title">Boxspringbett, weiß mit Federkernmatratze</a>
                                         <p class="product_price"><span class="good_price">899,99</span> €</p>
