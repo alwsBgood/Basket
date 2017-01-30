@@ -73,6 +73,10 @@ a:hover {
 .field:after {
     clear: both; }
 
+.pay_type {
+  font: 14px "ArialBold", sans-serif;
+  color: #7AC500; }
+
 .header_sec {
     padding: 20px 0 15px;
     background-color: #eeeeee; }
@@ -223,6 +227,14 @@ a:hover {
 .card_content_info .card_info_onStock {
     color: #444444;
     font: 11px/13px "ArialBold", sans-serif; }
+  .card_content_info .card_info_onStock.delivery {
+    display: none; }
+
+.card_content_info.isdelivered .card_info_onStock.no--delivey {
+  display: none; }
+
+.card_content_info.isdelivered .card_info_onStock.delivery {
+  display: block; }
 
 .card_content_partnerShop {
     display: inline-block;

@@ -79,6 +79,11 @@ a:hover{color: #23527c !important;}
     clear: both;
 }
 
+.pay_type{
+  font: 14px $bold;
+  color: #7AC500;
+}
+
 //Header Styles
 
 .header_sec{
@@ -271,6 +276,18 @@ a:hover{color: #23527c !important;}
   .card_info_onStock{
     color: #444444;
     font: 11px/13px $bold;
+  }
+  .card_info_onStock.delivery{
+    display: none;
+  }
+}
+
+.card_content_info.isdelivered{
+  .card_info_onStock.no--delivey{
+    display: none;
+  }
+  .card_info_onStock.delivery{
+    display: block;
   }
 }
 
