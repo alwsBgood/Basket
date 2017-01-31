@@ -348,7 +348,8 @@ a:hover {
 .total_price_sec {
   background: #eee;
   position: relative;
-  padding: 20px 0; }
+  padding: 20px 0;
+  margin-bottom: 25px; }
   .total_price_sec .prev_page_link {
     position: absolute;
     bottom: 0;
