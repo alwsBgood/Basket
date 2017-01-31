@@ -103,6 +103,18 @@
         line-height: 28px;
       }
     }
+    .step_name{
+      line-height: 34px !important;
+    }
+  }
+  .step_number{
+    span{
+      line-height: 30px !important;
+    }
+    img{width: 100%;}
+  }
+  .authorization_steps .inactive_step .step_number, .authorization_steps .inactive_step_one .step_number{
+    line-height: 30px;
   }
   .authorization_info_block{
     display: none;

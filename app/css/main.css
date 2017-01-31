@@ -437,14 +437,18 @@ a:hover {
     line-height: 44px;
     vertical-align: top;
     display: inline-block; }
-  .authorization_steps .inactive_step {
+  .authorization_steps .inactive_step,
+  .authorization_steps .inactive_step_one {
     color: #bbb; }
-    .authorization_steps .inactive_step .step_number {
+    .authorization_steps .inactive_step .step_number,
+    .authorization_steps .inactive_step_one .step_number {
       line-height: 38px;
       border: 2px solid #bbb; }
-      .authorization_steps .inactive_step .step_number span {
+      .authorization_steps .inactive_step .step_number span,
+      .authorization_steps .inactive_step_one .step_number span {
         line-height: 38px; }
-    .authorization_steps .inactive_step .step_name {
+    .authorization_steps .inactive_step .step_name,
+    .authorization_steps .inactive_step_one .step_name {
       line-height: 40px; }
   .authorization_steps li.done_step .step_number span {
     display: none; }
@@ -555,7 +559,6 @@ a:hover {
     margin-left: 15px; }
 
 .hidden_form_inputs {
-  display: none;
   margin-top: 25px; }
   .hidden_form_inputs .inputs_row {
     margin-top: 20px; }
@@ -588,6 +591,8 @@ a:hover {
       font-family: "ArialBold", sans-serif;
       margin-top: 10px;
       margin-bottom: 15px; }
+      .hidden_form_inputs .static_information .country_name span {
+        font-family: "ArialRegular", sans-serif; }
     .hidden_form_inputs .static_information .pay_title {
       font-size: 18px;
       font-family: "ArialBold", sans-serif;
@@ -673,9 +678,11 @@ a:hover {
     margin-bottom: 20px; }
 
 .radio_text_payInfo {
-  color: green;
+  color: #7AC500;
   font-family: "ArialBold", sans-serif;
   font-size: 13px; }
+  .radio_text_payInfo span {
+    font-family: "ArialRegular", sans-serif; }
 
 .pruduct_info_product_card .product_description {
   display: inline-block;
@@ -788,6 +795,8 @@ a:hover {
       margin-bottom: 15px; }
     .payment_info .card_payment .card_payment_text {
       font-size: 14px; }
+  .payment_info .card_payment_text {
+    color: #7AC500; }
 
 .controls_sec {
   background: #eee;
@@ -1130,6 +1139,14 @@ input:-ms-input-placeholder {
       margin-right: 15px; }
     .authorization_steps .inactive_step .step_number {
       line-height: 28px; }
+    .authorization_steps .step_name {
+      line-height: 34px !important; }
+  .step_number span {
+    line-height: 30px !important; }
+  .step_number img {
+    width: 100%; }
+  .authorization_steps .inactive_step .step_number, .authorization_steps .inactive_step_one .step_number {
+    line-height: 30px; }
   .authorization_info_block {
     display: none; }
   .form_block .label_form_checkbox {

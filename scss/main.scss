@@ -530,7 +530,8 @@ a:hover{color: #23527c !important;}
       display: inline-block;
     }
   }
-  .inactive_step{
+  .inactive_step,
+  .inactive_step_one{
     color: #bbb;
     .step_number{
       line-height: 38px;
@@ -672,7 +673,7 @@ a:hover{color: #23527c !important;}
 }
 
 .hidden_form_inputs{
-  display: none;
+  // display: none;
   margin-top: 25px;
   .inputs_row{
     margin-top: 20px;
@@ -714,6 +715,9 @@ a:hover{color: #23527c !important;}
       font-family: $bold;
       margin-top: 10px;
       margin-bottom: 15px;
+      span{
+        font-family: $main_font;
+      }
     }
     .pay_title{
       font-size: 18px;
@@ -818,9 +822,12 @@ a:hover{color: #23527c !important;}
 }
 
 .radio_text_payInfo{
-  color: green;
+  color: #7AC500;
   font-family: $bold;
-  font-size: 13px
+  font-size: 13px;
+  span{
+    font-family: $main_font;
+  }
 }
 
 .pruduct_info_product_card{
@@ -962,6 +969,9 @@ a:hover{color: #23527c !important;}
     .card_payment_text{
       font-size: 14px;
     }
+  }
+  .card_payment_text{
+    color: #7AC500;
   }
 }
 
