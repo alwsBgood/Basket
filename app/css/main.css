@@ -581,6 +581,7 @@ a:hover {
     margin-left: 15px; }
 
 .hidden_form_inputs {
+  display: none;
   margin-top: 25px; }
   .hidden_form_inputs .inputs_row {
     margin-top: 20px; }
