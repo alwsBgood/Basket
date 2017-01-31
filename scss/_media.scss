@@ -58,6 +58,7 @@
   //total price (page 1)
   .total_price_container{
     width: 100%;
+    float: none;
     .button{
       float: none;
       margin-right: auto;
@@ -81,6 +82,20 @@
     padding-bottom: 60px;
     .prev_page_link{
       bottom: -50px;
+    }
+  }
+  .total_price_btn_back{
+    float: none;
+    text-align: center;
+    margin-top: 40px;
+    margin-right: 17px;
+    display: block;
+    margin: 40px 0 0;
+    width: 100%;
+    .button{
+      width: 308px;
+      display: block;
+      margin: 0 auto;
     }
   }
   // Authorization
@@ -155,6 +170,16 @@
     .hidden_form_inputs select + select {
         margin-left: 5px;
         padding: 0 5px;
+    }
+  }
+  .products_sec_header{
+    .btn_block{
+      float: none;
+      text-align: left;
+      margin-bottom: 15px;
+      .button_orange{
+        width: 300px;
+      }
     }
   }
   // Sop Info Card
@@ -238,6 +263,14 @@
     }
     .pay_type{
       float: right;
+    }
+  }
+  .total_price_btn_back{
+    float: right;
+    margin-top: 40px;
+    margin-right: 17px;
+    .button{
+      width: 308px;
     }
   }
   // Authorization
@@ -400,6 +433,13 @@
       .location_field{
         max-width: 255px;
         width: 100%;
+      }
+    }
+  }
+  .products_sec_header{
+    .btn_block{
+      .button_orange{
+        width: 200px;
       }
     }
   }

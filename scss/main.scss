@@ -187,6 +187,19 @@ a:hover{color: #23527c !important;}
 .products_sec_header{
   padding-top: 10px;
   padding-bottom: 10px;
+  .sec_3_h3{display: inline-block;}
+  .btn_block{
+    float: right;
+    text-align: center;
+    .button_orange{
+      background-color: #ff5100;
+      width: 300px;
+    }
+    .btn_text{
+      font-size: 12px;
+      color: #000;
+    }
+  }
 }
 
 .products_sec_header > h2{
@@ -425,7 +438,16 @@ a:hover{color: #23527c !important;}
     transform: rotate(-135deg);
   }
 }
-
+.total_price_btn_back{
+  margin-top: 20px;
+  display: inline-block;
+  width: 300px;
+  margin-top: 125px;
+  .button img{
+    transform: rotate(180deg);
+    margin-right: 20px;
+  }
+}
 .total_price_container{
   float: right;
   .total_price_description{
