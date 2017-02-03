@@ -310,6 +310,8 @@ a:hover {
   position: absolute;
   left: -270px;
   top: 0;
+  z-index: 10;
+  border-bottom: 1px solid #000;
   background: #eeeeee;
   padding: 15px 20px;
   -webkit-transition: opacity .5s;
@@ -367,12 +369,19 @@ a:hover {
   margin-top: 20px;
   display: inline-block;
   width: 300px;
-  margin-top: 125px; }
+  margin-top: 125px;
+  background-color: #fefefe; }
   .total_price_btn_back .button img {
     -webkit-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
     transform: rotate(180deg);
     margin-right: 20px; }
+
+.total_price_btn_back .button {
+  background-color: #808080; }
+
+.total_price_btn_back .button:hover {
+  background-color: #444444 !important; }
 
 .total_price_container {
   float: right; }
