@@ -142,6 +142,12 @@ a:hover {
   border-top: 1px solid #eee;
   margin-top: 20px; }
 
+.products_sec_confirmation .label_form_checkbox {
+  padding-left: 25px;
+  margin-bottom: 10px; }
+  .products_sec_confirmation .label_form_checkbox .styled_chekbox {
+    margin-left: -26px; }
+
 .product_cards_card {
   border: 1px solid #454545;
   width: 100%; }
@@ -542,26 +548,8 @@ a:hover {
     font-size: 10px;
     line-height: 12px; }
   .form_block .label_form_checkbox {
-    display: block;
     margin-top: 20px;
-    width: 500px;
-    font-size: 11px; }
-    .form_block .label_form_checkbox input[type="checkbox"] {
-      display: none; }
-    .form_block .label_form_checkbox input[type="checkbox"] + span {
-      display: inline-block;
-      width: 19px;
-      height: 19px;
-      margin: -1px 4px 0 0;
-      border: 1px solid #464646;
-      vertical-align: middle;
-      background: #fff;
-      cursor: pointer; }
-      .form_block .label_form_checkbox input[type="checkbox"] + span img {
-        display: none;
-        padding: 2px; }
-    .form_block .label_form_checkbox input[type="checkbox"]:checked + span img {
-      display: inline-block; }
+    width: 500px; }
   .form_block .radio_filed {
     display: block;
     margin-top: 30px;
@@ -589,6 +577,26 @@ a:hover {
     margin-left: 60px; }
   .form_block .short_field + .short_field {
     margin-left: 15px; }
+
+.label_form_checkbox {
+  display: block;
+  font-size: 11px; }
+  .label_form_checkbox input[type="checkbox"] {
+    display: none; }
+  .label_form_checkbox input[type="checkbox"] + span {
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    margin: -1px 4px 0 0;
+    border: 1px solid #464646;
+    vertical-align: middle;
+    background: #fff;
+    cursor: pointer; }
+    .label_form_checkbox input[type="checkbox"] + span img {
+      display: none;
+      padding: 2px; }
+  .label_form_checkbox input[type="checkbox"]:checked + span img {
+    display: inline-block; }
 
 .hidden_form_inputs {
   display: none;
