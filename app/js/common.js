@@ -111,13 +111,13 @@ $(".first_form_trigger").click(function() {
 // Checkbox
 jQuery(document).ready(function($) {
   if ($('[name=billingEmail2]').val() == 1) {
-    $('[type=checkbox]').prop('checked', true);
-    $('[type=checkbox]').addClass('input_checked');
+    $('[name=subscribe]').prop('checked', true);
+    $('[name=subscribe]').addClass('input_checked');
   } else {
-    $('[type=checkbox]').prop('checked', false);
+    $('[name=subscribe]').prop('checked', false);
   }
 
-  $('[type=checkbox]').click(function() {
+  $('[name=subscribe]').click(function() {
     $(this).toggleClass('input_checked');
     $(this).hasClass( "input_checked" )
         ? $('[name=billingEmail2]').val(1)
@@ -164,3 +164,18 @@ switch($('.stars').data('stars')) {
     $('.stars').css('width', '43px')
     break;
 }
+
+// Confirmation
+jQuery(document).ready(function($) {
+
+  $('[name=confirmation]').click(function() {
+    $(this).toggleClass('input_checked');
+
+    var inputChecked = $(this).hasClass( "input_checked" );
+
+    $(".hiddenExtra5").each(function() {
+      $(this).val(inputChecked ? 1 : 0);
+    });
+  });
+
+});
